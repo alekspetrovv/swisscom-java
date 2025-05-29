@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      # should be retrieved from azure key vault or any other cloud provider secrets in prod
+      uri: mongodb://test:test@localhost/swiss-stage?authSource=admin
+springdoc:
+  swagger-ui:
+    path: /docs
+  api-docs:
+    path: /docs
+custom:
+  profileInfo: "Running with Staging profile - Using Staging Database (swisscom-stage)"
+logging:
+  level:
+    com.swisscom.crud: INFO
+    org.springframework.data.mongodb.core.MongoTemplate: INFO

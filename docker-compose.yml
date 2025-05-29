@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb_container
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    environment:
+      MONGODB_DB: swiss
+      MONGODB_USER: test
+      MONGODB_PASSWORD: test
+    restart: always
+
+volumes:
+  mongo_data:

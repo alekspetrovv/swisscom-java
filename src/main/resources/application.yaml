@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://test:test@localhost/swiss?authSource=admin
+springdoc:
+  swagger-ui:
+    path: /docs
+  api-docs:
+    path: /docs
+custom:
+  profileInfo: "Running with DEV profile - Using DEV Database (swiss-db)"
+logging:
+  level:
+    com.swisscom.crud: DEBUG
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
