@@ -26,7 +26,13 @@ This is the Spring Boot backend application for the Swisscom Service CRUD task. 
     git clone <your-backend-repo-url>
     cd <your-backend-project-directory>
     ```
-2.  **Build the project using Maven:**
+2.  **Setup MongoDB Instance**
+    ```bash
+    docker compose up -d or 
+    docker-compose up -d 
+    ```
+
+3. **Build the project using Maven:**
     (Using the Maven Wrapper is recommended as it uses the project-defined version)
     ```bash
     ./mvnw clean install
