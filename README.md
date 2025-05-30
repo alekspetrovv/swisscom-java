@@ -104,7 +104,7 @@ The application will start, typically on `http://localhost:4005`.
 
 This backend application provides the REST API. To interact with the service management system through a graphical user interface, a companion frontend application is available.
 
-* **Frontend Repository:**  `https://github.com/alekspetrovv/swisscom-frontend`
+* **Frontend Repository:** [Swisscom Angular Frontend](https://github.com/alekspetrovv/swisscom-frontend)
 * **Setup Instructions:** Please refer to the `README.md` file within the frontend repository for detailed instructions on how to set up and run the frontend application. It is designed to connect to this backend.
 
 
