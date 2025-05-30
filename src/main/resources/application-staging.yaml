@@ -2,7 +2,7 @@ spring:
   data:
     mongodb:
       # should be retrieved from azure key vault or any other cloud provider secrets in prod
-      uri: mongodb://test:test@localhost/swiss-stage?authSource=admin
+      uri: mongodb://test:test@localhost/swiss-stage?authSource=swiss
 springdoc:
   swagger-ui:
     path: /docs

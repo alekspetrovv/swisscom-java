@@ -10,10 +10,12 @@ This is the Spring Boot backend application for the Swisscom Service CRUD task. 
     * The application can be configured to connect to your MongoDB instance.
     * A `docker-compose.yml` file is provided in the project root to easily start a MongoDB container pre-configured with a `test` user and `swiss` database, which matches the default `application.yaml`. To use it:
         ```bash
-        docker-compose up -d
+        docker compose up -d or 
+        docker-compose up -d 
         ```
       To stop it:
         ```bash
+        docker compose down or 
         docker-compose down
         ```
 

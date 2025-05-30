@@ -3,7 +3,7 @@ spring:
     default: dev
   data:
     mongodb:
-      uri: mongodb://test:test@localhost/swiss?authSource=admin
+      uri: mongodb://test:test@localhost/swiss?authSource=swiss
 springdoc:
   swagger-ui:
     path: /docs

@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   mongodb:
     image: mongo:6.0
@@ -8,10 +6,13 @@ services:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
+      - ./mongo-init:/docker-entrypoint-initdb.d
     environment:
-      MONGODB_DB: swiss
-      MONGODB_USER: test
-      MONGODB_PASSWORD: test
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+      APP_MONGO_DB: swiss
+      APP_MONGO_USER: test
+      APP_MONGO_PASSWORD: test
     restart: always
 
 volumes:
