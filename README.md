@@ -98,7 +98,15 @@ You can activate a specific profile in several ways:
     ./run-backend.sh staging  # Runs with 'staging' profile
     ```
 
-The application will start, typically on `http://localhost:8080`.
+The application will start, typically on `http://localhost:4005`.
+
+## Frontend Application
+
+This backend application provides the REST API. To interact with the service management system through a graphical user interface, a companion frontend application is available.
+
+* **Frontend Repository:**  `https://github.com/alekspetrovv/swisscom-frontend`
+* **Setup Instructions:** Please refer to the `README.md` file within the frontend repository for detailed instructions on how to set up and run the frontend application. It is designed to connect to this backend.
+
 
 ## Key Features Implemented
 
