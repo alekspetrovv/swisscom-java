@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    default: dev
   data:
     mongodb:
       uri: mongodb://test:test@localhost/swiss?authSource=admin
