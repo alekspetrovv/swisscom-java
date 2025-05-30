@@ -4,6 +4,8 @@ spring:
   data:
     mongodb:
       uri: mongodb://test:test@localhost/swiss?authSource=swiss
+server:
+  port: 4005
 springdoc:
   swagger-ui:
     path: /docs

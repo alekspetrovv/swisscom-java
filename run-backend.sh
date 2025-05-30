@@ -63,7 +63,6 @@ fi
 echo ""
 echo "Starting Spring Boot application..."
 echo "Ensure MongoDB is running and accessible as per the active profile's configuration."
-echo "API documentation (Swagger UI) should be available at http://localhost:8080/docs (default)."
 echo "Press Ctrl+C to stop the application."
 echo ""
 
