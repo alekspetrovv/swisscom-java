@@ -75,9 +75,9 @@ You can activate a specific profile in several ways:
 ## Running the Application
 
 1.  **Ensure MongoDB is running** and accessible as per your active profile's configuration. (Using the provided `docker-compose.yml` is recommended for local setup).
-2.  **Build the application** (if not already done):
+2.  **Build the application with unit tests** (if not already done):
     ```bash
-    ./mvnw clean install -DskipTests
+    ./mvnw clean install
     ```
 3.  **Run the JAR file:**
     Navigate to the project's root directory and run:
@@ -117,4 +117,5 @@ This backend application provides the REST API. To interact with the service man
 * Local in-memory caching for `Service` GET operations.
 * Spring Profile configuration for different environments.
 * Global exception handling.
+* Unit Tests.
 * DTOs for API contracts and validation for incoming data.
