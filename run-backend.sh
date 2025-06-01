@@ -28,8 +28,8 @@ fi
 echo "Using Maven command: $MVN_CMD"
 echo ""
 
-echo "Building the Spring Boot application with Maven (skipping tests)..."
-"$MVN_CMD" clean install -DskipTests
+echo "Building the Spring Boot application with Maven..."
+"$MVN_CMD" clean install
 if [ $? -ne 0 ]; then
     echo "ERROR: Maven build failed. Please check for errors above."
     exit 1
